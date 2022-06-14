@@ -3,18 +3,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 public class UserValidation{
     @Test
-    void testFirst() {
-
+    void testeValidateFistNameReturnFalse() {
+        UserRegistration validator = new UserRegistration();
+        boolean result = validator.firstNameValidator("an");
+        Assertions.assertFalse(result);
     }
 
     @Test
-    void testSecond() {
-
-    }
-
-    @Test
-    void testeThird() {
-
+    void inputProperFirstNameReturnTrue() {
+        UserRegistration validator = new UserRegistration();
+        boolean result = validator.firstNameValidator("Animesh");
+        Assertions.assertTrue(result);
     }
 }
 
