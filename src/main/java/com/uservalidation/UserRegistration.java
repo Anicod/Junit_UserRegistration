@@ -3,7 +3,7 @@ package com.uservalidation;
 import java.util.regex.Pattern;
 public class UserRegistration {
     private static final String NAME_PATTERN = "[A-Z][a-z]{2,}";
-    private static final String CONTACT_NUMBER_PATTERN = "[0-9]{2}[1-9][0-9]{9}$";
+    private static final String CONTACT_NUMBER_PATTERN = "[0-9]{2}\\s[1-9][0-9]{9}$";
     boolean validateFirstName;
     boolean validateLastname;
     boolean validateContactNumber;
