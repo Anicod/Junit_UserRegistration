@@ -30,6 +30,14 @@ public class UserValidation{
         boolean result = lastNameValidator.lastNameValidator("Raj");
         Assertions.assertTrue(result);
     }
+
+    @Test
+    void contactNumberWithoutCountryCodeReturnFalse() {
+        UserRegistration contactNumberValidator = new UserRegistration();
+        boolean result = contactNumberValidator.contactNumberValidator("9354575658");
+        Assertions.assertFalse(result);
+    }
 }
+
 
 
