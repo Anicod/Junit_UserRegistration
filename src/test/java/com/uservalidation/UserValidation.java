@@ -23,6 +23,13 @@ public class UserValidation{
         Assertions.assertFalse(result);
 
     }
+
+    @Test
+    void lastNameProperReturntrue() {
+        UserRegistration lastNameValidator = new UserRegistration();
+        boolean result = lastNameValidator.lastNameValidator("Raj");
+        Assertions.assertTrue(result);
+    }
 }
 
 
