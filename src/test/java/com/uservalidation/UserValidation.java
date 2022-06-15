@@ -41,7 +41,7 @@ public class UserValidation{
     @Test
     void contactNumberWithCountryCodeReturnTrue() {
         UserRegistration contactNumbervalidator = new UserRegistration();
-        boolean result = contactNumbervalidator.contactNumberValidator("919354575658");
+        boolean result = contactNumbervalidator.contactNumberValidator("91 9354575658");
         Assertions.assertTrue(result);
     }
 }
